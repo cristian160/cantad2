@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantada HTML</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .cantada-container {
+            background-color: #ffffff;
+            border: 2px solid #ff69b4;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            width: 300px;
+        }
+        .cantada-container h1 {
+            color: #ff69b4;
+            font-size: 1.5em;
+        }
+        .cantada-container p {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .cantada-container button {
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cantada-container button:hover {
+            background-color: #ff1493;
+        }
+        .response {
+            display: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #ff69b4;
+        }
+        .share-button {
+            background-color: #25D366;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .share-button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    <div class="cantada-container">
+        <h1>Oi, gatinha 😊</h1>
+        <p>Papo de urubu, pena de galinha <br>
+        se você quer me dar uma beijo da uma risadinha</p>
+        <button onclick="mostrarResposta()">Clique para uma surpresa!</button>
+        <p class="response" id="resposta">Você acabou de ganhar um vale beijocas, só aceito devoluções em froma de beijos! 😘</p>
+       
+    </div>
+
+    <script>
+        function mostrarResposta() {
+            document.getElementById('resposta').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
